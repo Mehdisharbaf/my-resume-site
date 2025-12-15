@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahdi Sharbaf | Cloud & DevOps Engineer</title>
     
-    <!-- 🔴 لوگو در تب مرورگر (Favicon) -->
+    <!-- 🔴 Logo im Browser-Tab (Favicon) -->
     <link rel="icon" type="image/png" href="logo.png">
     
-    <!-- جلوگیری از ایندکس شدن آدرس شخصی -->
+    <!-- Verhindert Indexierung der persönlichen Adresse -->
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Tailwind CSS -->
@@ -63,7 +63,7 @@
     </script>
 
     <style>
-        /* استایل‌های شیشه‌ای و نئونی */
+        /* Glas- und Neon-Effekte */
         .glass {
             background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(12px);
@@ -78,7 +78,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* اسکرول بار سفارشی */
+        /* Benutzerdefinierte Scrollleiste */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -96,7 +96,7 @@
 </head>
 <body class="bg-dark-bg text-dark-text selection:bg-accent-blue selection:text-white overflow-x-hidden relative">
 
-    <!-- پس‌زمینه متحرک (Blobs) -->
+    <!-- Animierter Hintergrund (Blobs) -->
     <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
         <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent-blue/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
         <div class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-accent-purple/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-2000"></div>
@@ -108,11 +108,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
-                <!-- 🔴 لوگو و اسم سایت -->
+                <!-- 🔴 Logo und Seitenname -->
                 <div class="flex items-center gap-3">
-                    <!-- تصویر لوگو -->
-                    <img src="logo.png" alt="MS Logo" class="w-10 h-10 object-contain drop-shadow-[0_0_10px_rgba(56,189,248,0.5)]">
-                    
+                    <img src="logo.png" alt="MS Logo" class="w-10 h-10 object-contain drop-shadow-[0_0_10px_rgba(56,189,248,0.5)]" onerror="this.style.display='none'">
                     <div class="flex-shrink-0 font-bold text-2xl tracking-tighter hidden sm:block">
                         Mahdi<span class="text-accent-blue">.DevOps</span>
                     </div>
@@ -124,7 +122,8 @@
                         <a href="#skills" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Skills</a>
                         <a href="#projects" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Projekte</a>
                         <a href="#experience" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Erfahrung</a>
-                        <a href="javascript:void(0)" onclick="openImpressum()" class="text-dark-muted hover:text-white px-3 py-2 text-sm">Impressum</a>
+                        <!-- CV Button im Menü -->
+                        <a href="Lebenslauf.pdf" target="_blank" class="text-accent-blue border border-accent-blue/30 bg-accent-blue/10 hover:bg-accent-blue hover:text-dark-bg transition-all px-4 py-2 rounded-lg text-sm font-medium">CV</a>
                     </div>
                 </div>
             </div>
@@ -132,7 +131,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <main class="relative z-10 pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <main id="about" class="relative z-10 pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
             
             <!-- Hero Text -->
@@ -153,21 +152,20 @@
                 </p>
                 
                 <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="#projects" class="px-8 py-4 rounded-xl bg-accent-blue text-dark-bg font-bold hover:bg-white transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(56,189,248,0.5)]">
-                        Meine Projekte
+                    <!-- 🔴 CV Download Button -->
+                    <a href="Lebenslauf.pdf" target="_blank" class="px-8 py-4 rounded-xl bg-accent-blue text-dark-bg font-bold hover:bg-white transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(56,189,248,0.5)] flex items-center justify-center gap-2">
+                        <i class="fas fa-download"></i> Lebenslauf (CV)
                     </a>
-                    <a href="https://linkedin.com/in/mahdi-sharbaf-movassaghpour" target="_blank" class="px-8 py-4 rounded-xl glass hover:bg-white/10 transition-all border border-white/10 flex items-center justify-center gap-2">
-                        <i class="fab fa-linkedin"></i> LinkedIn
+                    <!-- Projekte Button -->
+                    <a href="#projects" class="px-8 py-4 rounded-xl glass hover:bg-white/10 transition-all border border-white/10 flex items-center justify-center gap-2">
+                        Meine Projekte
                     </a>
                 </div>
             </div>
 
-            <!-- Hero Image/Video Placeholder -->
+            <!-- Hero Image/Video Platzhalter -->
             <div class="lg:w-1/2 flex justify-center relative">
-                <!-- Decorative Circles -->
                 <div class="absolute inset-0 bg-gradient-to-r from-accent-blue to-accent-purple opacity-20 blur-3xl rounded-full"></div>
-                
-                <!-- Profile Image with Glow -->
                 <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 glass animate-float">
                     <img src="small.jpg" alt="Mahdi Sharbaf" 
                          class="w-full h-full rounded-full object-cover border-4 border-accent-blue/20 shadow-2xl"
@@ -177,13 +175,12 @@
         </div>
     </main>
 
-    <!-- Video Introduction Section -->
+    <!-- Video Vorstellung Section -->
     <section id="video" class="relative z-10 py-16">
         <div class="max-w-4xl mx-auto px-4">
             <div class="glass rounded-3xl p-2 md:p-4 border border-accent-purple/20 shadow-[0_0_50px_rgba(129,140,248,0.2)]">
                 <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black">
-                    <!-- 🔴 PLACEHOLDER FOR YOUTUBE VIDEO -->
-                    <!-- Replace VIDEO_ID with your actual YouTube ID -->
+                    <!-- 🔴 YouTube Video -->
                     <div class="absolute inset-0 flex items-center justify-center text-center p-8 bg-dark-card/50">
                         <div>
                             <i class="fab fa-youtube text-6xl text-red-500 mb-4"></i>
@@ -213,7 +210,6 @@
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
-                <!-- Skill Items -->
                 <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-all group">
                     <i class="fab fa-linux text-4xl mb-4 text-gray-300 group-hover:text-accent-blue transition-colors"></i>
                     <h3 class="font-medium">Linux</h3>
@@ -242,7 +238,7 @@
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projekte -->
     <section id="projects" class="relative z-10 py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Ausgewählte <span class="gradient-text">Projekte</span></h2>
@@ -320,7 +316,7 @@
                 <!-- Job 2 -->
                 <div class="relative pl-8 md:pl-12 group">
                     <div class="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-dark-card border-4 border-white/10 group-hover:border-accent-purple transition-colors"></div>
-                    <span class="text-xs font-mono text-dark-muted mb-1 block">09/2021 - 09/2023</span>
+                    <span class="text-xs font-mono text-dark-muted mb-1 block">09/2021 - 09/2024</span>
                     <h3 class="text-xl font-bold text-white">Netzwerk-Infrastruktur & Sicherheit (Freelance)</h3>
                     <p class="text-sm text-dark-muted mb-4">Remote</p>
                     <p class="text-gray-400 text-sm leading-relaxed">
@@ -328,15 +324,7 @@
                     </p>
                 </div>
 
-                <!-- Gap Year -->
-                <div class="relative pl-8 md:pl-12 group opacity-70 hover:opacity-100 transition-opacity">
-                    <div class="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-dark-card border-4 border-white/10"></div>
-                    <span class="text-xs font-mono text-dark-muted mb-1 block">10/2023 - 09/2024</span>
-                    <h3 class="text-lg font-bold text-white">Sprachvorbereitung & Relocation</h3>
-                    <p class="text-gray-400 text-sm">Intensiv-Sprachkurse (Deutsch C1) und Vorbereitung auf das Masterstudium in Deutschland.</p>
-                </div>
-
-                <!-- Job 3 -->
+                <!-- Job 3 (ehemals 4, da Gap Year weg ist) -->
                 <div class="relative pl-8 md:pl-12 group">
                     <div class="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-dark-card border-4 border-white/10"></div>
                     <span class="text-xs font-mono text-dark-muted mb-1 block">04/2017 - 08/2021</span>
@@ -354,6 +342,23 @@
     <!-- Footer -->
     <footer class="relative z-10 py-12 border-t border-white/5 bg-dark-card/30">
         <div class="max-w-7xl mx-auto px-4 text-center">
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-white">Ausbildung</h3>
+                <div class="flex flex-col md:flex-row justify-center gap-6 text-left max-w-4xl mx-auto">
+                    <div class="glass p-6 rounded-xl flex-1 border border-white/5">
+                        <div class="text-accent-blue text-sm mb-1">10/2024 - Heute</div>
+                        <div class="font-bold text-lg text-white">Technologiemanagement M.Eng.</div>
+                        <div class="text-dark-muted text-sm">Technische Hochschule Deggendorf (THD), Deutschland</div>
+                    </div>
+                    <div class="glass p-6 rounded-xl flex-1 border border-white/5">
+                        <div class="text-dark-muted text-sm mb-1">10/2011 - 04/2015</div>
+                        <div class="font-bold text-lg text-white">Elektrotechnik B.Sc.</div>
+                        <div class="text-dark-muted text-sm">Azad-Universität Tabriz, Iran</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="flex justify-center space-x-8 mb-8">
                 <a href="https://linkedin.com/in/mahdi-sharbaf-movassaghpour" class="text-2xl text-dark-muted hover:text-accent-blue transition-colors"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/mahdisharbaf" class="text-2xl text-dark-muted hover:text-white transition-colors"><i class="fab fa-github"></i></a>
