@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mahdi Sharbaf | Cloud & DevOps Engineer</title>
     
-    <!-- 🔴 Logo im Browser-Tab (Favicon) -->
+    <!-- 🔴 لوگو در تب مرورگر (Favicon) -->
+    <!-- این خط باعث می‌شود لوگوی شما در تب بالای مرورگر دیده شود -->
     <link rel="icon" type="image/png" href="logo.png">
     
-    <!-- Verhindert Indexierung der persönlichen Adresse -->
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Tailwind CSS -->
@@ -63,7 +63,6 @@
     </script>
 
     <style>
-        /* Glas- und Neon-Effekte */
         .glass {
             background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(12px);
@@ -78,7 +77,6 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* Benutzerdefinierte Scrollleiste */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -96,7 +94,6 @@
 </head>
 <body class="bg-dark-bg text-dark-text selection:bg-accent-blue selection:text-white overflow-x-hidden relative">
 
-    <!-- Animierter Hintergrund (Blobs) -->
     <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
         <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent-blue/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
         <div class="absolute top-0 right-1/4 w-[500px] h-[500px] bg-accent-purple/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-2000"></div>
@@ -108,7 +105,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
-                <!-- 🔴 Logo und Seitenname -->
+                <!-- 🔴 لوگو و اسم سایت در نوار بالا -->
                 <div class="flex items-center gap-3">
                     <img src="logo.png" alt="MS Logo" class="w-10 h-10 object-contain drop-shadow-[0_0_10px_rgba(56,189,248,0.5)]" onerror="this.style.display='none'">
                     <div class="flex-shrink-0 font-bold text-2xl tracking-tighter hidden sm:block">
@@ -122,7 +119,6 @@
                         <a href="#skills" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Skills</a>
                         <a href="#projects" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Projekte</a>
                         <a href="#experience" class="hover:text-accent-blue transition-colors px-3 py-2 text-sm font-medium">Erfahrung</a>
-                        <!-- CV Button im Menü -->
                         <a href="Lebenslauf.pdf" target="_blank" class="text-accent-blue border border-accent-blue/30 bg-accent-blue/10 hover:bg-accent-blue hover:text-dark-bg transition-all px-4 py-2 rounded-lg text-sm font-medium">CV</a>
                     </div>
                 </div>
@@ -134,7 +130,6 @@
     <main id="about" class="relative z-10 pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
             
-            <!-- Hero Text -->
             <div class="text-center lg:text-left lg:w-1/2">
                 <div class="inline-flex items-center px-3 py-1 rounded-full border border-accent-blue/30 bg-accent-blue/10 text-accent-blue text-sm font-medium mb-6 animate-float">
                     <span class="flex h-2 w-2 rounded-full bg-accent-blue mr-2 animate-pulse"></span>
@@ -152,18 +147,15 @@
                 </p>
                 
                 <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <!-- 🔴 CV Download Button -->
                     <a href="Lebenslauf.pdf" target="_blank" class="px-8 py-4 rounded-xl bg-accent-blue text-dark-bg font-bold hover:bg-white transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(56,189,248,0.5)] flex items-center justify-center gap-2">
                         <i class="fas fa-download"></i> Lebenslauf (CV)
                     </a>
-                    <!-- Projekte Button -->
                     <a href="#projects" class="px-8 py-4 rounded-xl glass hover:bg-white/10 transition-all border border-white/10 flex items-center justify-center gap-2">
                         Meine Projekte
                     </a>
                 </div>
             </div>
 
-            <!-- Hero Image/Video Platzhalter -->
             <div class="lg:w-1/2 flex justify-center relative">
                 <div class="absolute inset-0 bg-gradient-to-r from-accent-blue to-accent-purple opacity-20 blur-3xl rounded-full"></div>
                 <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 glass animate-float">
@@ -175,12 +167,11 @@
         </div>
     </main>
 
-    <!-- Video Vorstellung Section -->
+    <!-- Video Section -->
     <section id="video" class="relative z-10 py-16">
         <div class="max-w-4xl mx-auto px-4">
             <div class="glass rounded-3xl p-2 md:p-4 border border-accent-purple/20 shadow-[0_0_50px_rgba(129,140,248,0.2)]">
                 <div class="relative w-full aspect-video rounded-2xl overflow-hidden bg-black">
-                    <!-- 🔴 YouTube Video -->
                     <div class="absolute inset-0 flex items-center justify-center text-center p-8 bg-dark-card/50">
                         <div>
                             <i class="fab fa-youtube text-6xl text-red-500 mb-4"></i>
@@ -201,7 +192,7 @@
         </div>
     </section>
 
-    <!-- Tech Stack (Skills) -->
+    <!-- Skills -->
     <section id="skills" class="relative z-10 py-20 bg-dark-bg/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -238,14 +229,14 @@
         </div>
     </section>
 
-    <!-- Projekte -->
+    <!-- Projects -->
     <section id="projects" class="relative z-10 py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Ausgewählte <span class="gradient-text">Projekte</span></h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Project 1 (Main) -->
+                <!-- Project 1 -->
                 <div class="glass rounded-2xl overflow-hidden hover:-translate-y-2 transition-transform duration-300 border border-accent-blue/20 lg:col-span-2">
                     <div class="p-8">
                         <div class="flex justify-between items-start mb-6">
@@ -276,7 +267,7 @@
                     </div>
                 </div>
 
-                <!-- Project 2 (Networking) -->
+                <!-- Project 2 -->
                 <div class="glass rounded-2xl p-8 hover:-translate-y-2 transition-transform duration-300">
                     <div class="p-3 bg-accent-purple/10 rounded-xl text-accent-purple w-fit mb-6">
                         <i class="fas fa-shield-alt text-2xl"></i>
@@ -324,7 +315,7 @@
                     </p>
                 </div>
 
-                <!-- Job 3 (ehemals 4, da Gap Year weg ist) -->
+                <!-- Job 3 -->
                 <div class="relative pl-8 md:pl-12 group">
                     <div class="absolute -left-[9px] top-0 w-5 h-5 rounded-full bg-dark-card border-4 border-white/10"></div>
                     <span class="text-xs font-mono text-dark-muted mb-1 block">04/2017 - 08/2021</span>
